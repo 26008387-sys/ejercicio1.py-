@@ -1,0 +1,14 @@
+print("Ciencias de la Computacion I - 2026")  # elimine lo que son los  asteriscos en linea 1 y 2
+print("Laboratorio 01 - Ejercicio 1")  # error de sintaxis faltava la n
+print() # elimine el erro de sintaxis que esra la U
+nombre = input("Ingrese su nombre: ")  # coloque los apostrofes de apertura
+apellido = input("Ingrese su apellido: ")
+import random
+edad = edad = int(input("Ingrese su edad: "))
+x = len("nombre:")   #coloque los apostrofes de cerradura y los dos puntos de inicio de bloque linea 7 y 8
+y = len("apellido:")
+respuesta = (x * y * (random.randint(0, edad + 4) + random.randint(0, edad + 15))) # elimine errores de sintaxis de tabulaciones 
+print("Felicitaciones " + nombre + "!!!") 
+print("Ha ejecutado su primer programa en Python!")
+print("Su respuesta para este programa es:", respuesta)   #coloque la coma faltante
+print()       # cerre el parentesis
