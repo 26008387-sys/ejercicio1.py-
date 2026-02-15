@@ -1,0 +1,16 @@
+                                                                                 # 1. Entrada de datos
+distancia = float(input("Distancia total del viaje (km): "))
+tiempo = float(input("Tiempo total manejando (horas): "))
+precio_galon = float(input("Precio de la gasolina por galón: "))
+galones_consumidos = float(input("Total de galones consumidos: "))
+                                                                                 # 2. Cálculos
+velocidad_promedio = distancia / tiempo
+rendimiento = distancia / galones_consumidos  # km por galón
+costo_total = galones_consumidos * precio_galon
+costo_por_km = costo_total / distancia
+                                                                                  # 3. Despliegue de resultados
+print("\n--- Resumen del Viaje ---")
+print(f"Velocidad promedio: {velocidad_promedio:.2f} km/h")
+print(f"Rendimiento del combustible: {rendimiento:.2f} km/gal")
+print(f"Costo total de gasolina: {costo_total:.2f}")
+print(f"Costo por kilómetro: {costo_por_km:.2f}")
