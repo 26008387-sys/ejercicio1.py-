@@ -1,0 +1,28 @@
+
+ventas_totales = float(input("Ingrese las ventas totales del día: "))           # 1. Lectura de datos
+adi1 = float(input("Ventas adicionales Cajero 1: "))
+adi2 = float(input("Ventas adicionales Cajero 2: "))
+adi3 = float(input("Ventas adicionales Cajero 3: "))
+adi4 = float(input("Ventas adicionales Cajero 4: "))
+
+comision_estandar = ventas_totales * 0.08                                       # 2. Cálculos de comisiones base
+comision_gerente = comision_estandar * 0.05
+comision_restante_cajeros = comision_estandar - comision_gerente
+# 3. Cálculo de la parte entera para cada cajero (división entera //)
+parte_cajero_base = int(comision_restante_cajeros // 4)
+
+cajero1 = parte_cajero_base + adi1                                               # 4. Cálculo final por cajero
+cajero2 = parte_cajero_base + adi2
+cajero3 = parte_cajero_base + adi3
+cajero4 = parte_cajero_base + adi4
+
+print("\n" + "="*35)                                                             # 5. Despliegue de resultados
+print("REPORTE DE COMISIONES")
+print("="*35)
+print(f"Comisión del Gerente (5%): {comision_gerente:.2f}")
+print("-" * 35)
+print(f"Comisión Total Cajero 1: {cajero1:.2f}")
+print(f"Comisión Total Cajero 2: {cajero2:.2f}")
+print(f"Comisión Total Cajero 3: {cajero3:.2f}")
+print(f"Comisión Total Cajero 4: {cajero4:.2f}")
+print("="*35)
